@@ -1,4 +1,5 @@
 ﻿using System;
+using ZadatakV2.Model;
 
 using System.Collections.Generic;
 using System.Linq;
@@ -16,13 +17,21 @@ namespace ZadatakV2
             broj = Console.ReadLine();
 
             if (broj.Contains("3"))
+            {
                 Console.WriteLine("Ima 3");
+            }
             else
             {
                 Console.WriteLine("Nema 3!");
             }
+           
+
+            Addition sabiranje = new Addition(1, 3);
+
+            Console.WriteLine(sabiranje.saberi());
 
             Console.ReadKey();
+
         }
     }
 }
